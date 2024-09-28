@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://use.typekit.net/ubv5bnc.css">
+    <title>Calcolatore Proporzioni Alimenti</title>
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcolatore Proporzioni Alimenti</h1>
+        <form id="calorie-form">
+            <div class="form-group">
+                <label for="calorie1">Kcal per 100g dell'Alimento 1:</label>
+                <input type="number" id="calorie1" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="calorie2">Kcal per 100g dell'Alimento 2:</label>
+                <input type="number" id="calorie2" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="quantita1">Quantità (g) dell'Alimento 1:</label>
+                <input type="number" id="quantita1" step="0.1" required>
+            </div>
+            <button type="button" onclick="gestisciCalcolo()">CALCOLA</button>
+        </form>
+        <div id="risultato" class="result"></div>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
