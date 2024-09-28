@@ -15,9 +15,7 @@ function gestisciCalcolo() {
     // Calcolo dell'equivalente
     const equivalente = calcolaEquivalente(calorieAlimento1, calorieAlimento2, quantitaAlimento1);
 
-    // Output del risultato
-    document.getElementById('risultato').textContent = `${quantitaAlimento1} g alimento 1 = ${equivalente.toFixed(2)} g alimento 2.`;
+    // Output del risultato con numeri in grassetto
+    document.getElementById('risultato').innerHTML = 
+        `<span class="bold-number">${quantitaAlimento1}</span> g alimento 1 = <span class="bold-number">${equivalente.toFixed(2)}</span> g alimento 2.`;
 }
-
-// Assicurati di avere un bottone nel tuo HTML che chiama questa funzione
-// <button type="button" onclick="gestisciCalcolo()">CALCOLA</button>
